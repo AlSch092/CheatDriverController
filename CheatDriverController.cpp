@@ -6,8 +6,6 @@
 
 int main(int argc, char** argv)
 {
-        std::cout << "Hello World!\n";
-
 	std::string procName;
 	UINT64 Address = 0;
 	int bytesToReadWrite = 0;
@@ -38,7 +36,7 @@ int main(int argc, char** argv)
 		    if (DriverController::WriteMemory(DriverController::FindProcessId(wProcName.c_str()), Address, (const LPBYTE)ret, 1, NULL)) //will finish 'write' a bit later
 	            {
 		        printf("Wrote memory!\n");
-	             }
+	            }
 		}
 	}
 	else
