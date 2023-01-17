@@ -1,6 +1,9 @@
 #include "Controller.hpp"
 #include <psapi.h>
 
+//TODO: Make routine to Create thread in remote process 
+//TODO: Make routine to write memory in any process for injecting a DLL (write memory, call PsCreateThread which calls LoadLibraryA)
+
 DWORD DriverController::FindProcessId(const std::wstring& processName)
 {
 	PROCESSENTRY32 processInfo;
